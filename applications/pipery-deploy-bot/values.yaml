@@ -1,0 +1,3 @@
+image:
+  repository: ghcr.io/pipery-dev/pipery-deploy-bot
+  tag: 7397f7c4763c4619e20d9cd1eff8fba62e798fe6
