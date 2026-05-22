@@ -1,3 +1,24 @@
 image:
   repository: ghcr.io/pipery-dev/pipery-dashboard
-  tag: 9e277346b25b3f0b406123b3f369d86555e00e6f
+  tag: 417717b3bea6ebe9c381594f33ad0dd05e7ece63
+
+env:
+  nextauthUrl: https://dash.pipery.dev
+  sessionCookiePrefix: __Secure-pipery-auth
+  cookieDomain: .pipery.dev
+  secureCookies: "true"
+  githubScope: read:user user:email repo workflow
+  gitlabScope: read_user api
+  bitbucketScope: account repository pipeline pullrequest
+  gitlabApiBase: https://gitlab.com/api/v4
+  bitbucketApiBase: https://api.bitbucket.org/2.0
+secrets:
+  existingSecret: pipery-dashboard-nextauth
+  nextauthSecretKey: nextauth-secret
+  githubClientIdKey: github-client-id
+  githubClientSecretKey: github-client-secret
+  gitlabClientIdKey: gitlab-client-id
+  gitlabClientSecretKey: gitlab-client-secret
+  bitbucketClientIdKey: bitbucket-client-id
+  bitbucketClientSecretKey: bitbucket-client-secret
+
