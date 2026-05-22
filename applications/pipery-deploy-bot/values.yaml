@@ -1,3 +1,24 @@
 image:
   repository: ghcr.io/pipery-dev/pipery-deploy-bot
-  tag: a92f0cc5b3a30f3b485956d8ac581ddd9a5269f2
+  tag: b04d4674d9bc1e4e6bea4ae04b79a2a492a3ef74
+
+ingress:
+  enabled: true
+  hosts:
+    - host: deploy-bot.pipery.dev
+      paths:
+        - path: /
+          pathType: Prefix
+dex:
+  enabled: true
+  issuer: https://auth.pipery.dev/dex
+  clientId: pipery-deploy-bot
+apiToken:
+  existingSecret: pipery-deploy-bot-api
+database:
+  existingSecret: pipery-deploy-bot-database
+config:
+  existingSecret: pipery-deploy-bot-config
+privateKey:
+  existingSecret: pipery-deploy-bot-private-key
+
