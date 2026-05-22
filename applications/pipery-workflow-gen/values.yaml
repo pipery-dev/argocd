@@ -1,24 +1,3 @@
 image:
   repository: ghcr.io/pipery-dev/pipery-workflow-gen
-  tag: 3595a5c2b930dea0330b72cefeec6ababc8be2ae
-
-env:
-  nextauthUrl: https://start.pipery.dev
-  sessionCookiePrefix: __Secure-pipery-auth
-  cookieDomain: .pipery.dev
-  secureCookies: "true"
-  githubScope: read:user user:email repo workflow
-  gitlabScope: read_user api
-  bitbucketScope: account repository pipeline pullrequest
-  gitlabApiBase: https://gitlab.com/api/v4
-  bitbucketApiBase: https://api.bitbucket.org/2.0
-secrets:
-  existingSecret: pipery-workflow-gen-nextauth
-  nextauthSecretKey: nextauth-secret
-  githubClientIdKey: github-client-id
-  githubClientSecretKey: github-client-secret
-  gitlabClientIdKey: gitlab-client-id
-  gitlabClientSecretKey: gitlab-client-secret
-  bitbucketClientIdKey: bitbucket-client-id
-  bitbucketClientSecretKey: bitbucket-client-secret
-
+  tag: 50ee5117e82e0e56c61182a6a6de96582a2c65a0
