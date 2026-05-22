@@ -1,0 +1,3 @@
+image:
+  repository: ghcr.io/pipery-dev/pipery-auth
+  tag: 35204ae7682bf5b737fedcc3f74e7990284cf5e2
