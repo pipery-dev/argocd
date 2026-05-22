@@ -1,3 +1,22 @@
 image:
   repository: ghcr.io/pipery-dev/pipery-release-bot
-  tag: a24bf7743f87b847e2ca9c64ddaf1123c583485d
+  tag: 965072c05fd0f171fb993e3e6eb2bdc3a4cbec5f
+
+ingress:
+  enabled: true
+  hosts:
+    - host: release-bot.pipery.dev
+      paths:
+        - path: /
+          pathType: Prefix
+dex:
+  enabled: true
+  issuer: https://auth.pipery.dev/dex
+  clientId: pipery-release-bot
+apiToken:
+  existingSecret: pipery-release-bot-api
+config:
+  existingSecret: pipery-release-bot-config
+privateKey:
+  existingSecret: pipery-release-bot-private-key
+
