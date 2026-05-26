@@ -1,0 +1,13 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: pipery-release-bot-api
+  namespace: pipery
+spec:
+  encryptedData:
+    api-token: AgDN3oAIh7TNQldB7dNPKGr3GQeB6vvz5NoLyEgStq6eK0HWlgrqPYkXLu/w2kbA5rBifNdGpdZIJzNYla1s1i+w9rwFuDsnbH8spXFbdqjeKAZ2ZKTPP/HmG0XQM4F0QVsjir6Bq3pOnoQ1oNDz19ZvQy5YqDDCA4OddyLU+K12qG0Vo30RMW/33bRqwS10GNw8TYxuQt6vGHJue8gJzbsFV4agfG6fnNPUgxEK54+VaLs7Hpa22ZJ6k0r40ZoYLpr8DLf7LyFgDAN8SZSKK1+NMEAUEn63ZtVZwuJDY1aqrtWV0zrA4QT5wK1tBwJpGQvmJElyXTQpyF4jVBCefQoWra3shec80mKpKsODD3M4s86lMJkc0g39ZEPORWkNXBdKIhkd9bhPkLL2ATnf5OKEGTY/cqdXTZz5aXUlWu18a9GhmWAElW3g4NFNN4sIa5EpVEy9Jrh6MvoOqpQ4Hz/MtTLbw0rSfY5olBduU/hPECacmZj2OJbJ4UK95oaNJ1gJwofCwPwWJH7YW89pEudm6aPwXRTA7/UwHc2VepWB5OfQdKc7mKJBn37pctNAWNOJesgrh1cfBMEAGAE+yClsPu8X1l21UQqOQAbN2QA2J82kU+lNZe6GfMvtXXOjMwGyM1OuPpKeHH2kcq0wMBaFtIOC/yXxfkZp0W0mU4NCqfuhzAx6mNyb2SBgLzik9U7UZO7oRxi0uk+Y9QZD65dwXmZcU7bLE5DEcu8ksa0ghuZmOHrIAc1NCsis3vWxXeIkLZTpBue6KYpmtQUIXCpU
+  template:
+    metadata:
+      name: pipery-release-bot-api
+      namespace: pipery
