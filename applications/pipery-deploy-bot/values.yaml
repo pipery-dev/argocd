@@ -1,3 +1,6 @@
 image:
   repository: ghcr.io/pipery-dev/pipery-deploy-bot
   tag: 278c9e876dbbd34e737a1e02a13e5dfd8f0af91a
+
+imagePullSecrets:
+  - name: ghcr-pull-secret

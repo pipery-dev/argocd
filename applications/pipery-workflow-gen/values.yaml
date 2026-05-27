@@ -1,3 +1,6 @@
 image:
   repository: ghcr.io/pipery-dev/pipery-workflow-gen
   tag: 46a5e50f85e1e72325adfb0f000aa682fd1e75f7
+
+imagePullSecrets:
+  - name: ghcr-pull-secret
