@@ -1,6 +1,7 @@
 image:
   repository: ghcr.io/pipery-dev/release-bot
-  tag: 0cde5cb0e9438a17b53378532dc0d706a7e976e7
+  tag: 08160c3f5ced6aa88ba7343e703178b92cf836d1
 
 imagePullSecrets:
   - name: ghcr-pull-secret
+
