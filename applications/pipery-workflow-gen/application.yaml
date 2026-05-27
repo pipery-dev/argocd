@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/pipery-dev/pipery-workflow-gen.git
+    - repoURL: https://github.com/pipery-dev/workflow-gen.git
       targetRevision: main
       path: charts/pipery-workflow-gen
       helm:

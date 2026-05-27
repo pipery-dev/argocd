@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   sources:
-    - repoURL: https://github.com/pipery-dev/pipery-deploy-bot.git
+    - repoURL: https://github.com/pipery-dev/deploy-bot.git
       targetRevision: main
       path: charts/pipery-deploy-bot
       helm:
