@@ -1,11 +1,7 @@
 image:
   repository: ghcr.io/pipery-dev/deploy-bot
-  tag: 20d1eaff5bd314a42630ea11894fe15e1ef88e51
+  tag: 424ed20033e69df473651c43da278cfb2c7baf50
 
 imagePullSecrets:
   - name: ghcr-pull-secret
 
-hostAliases:
-  - ip: 172.25.0.2
-    hostnames:
-      - auth.pipery.dev
