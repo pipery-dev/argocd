@@ -4,6 +4,10 @@ image:
 
 imagePullSecrets:
   - name: ghcr-pull-secret
+hostAliases:
+  - ip: 172.25.0.2
+    hostnames:
+      - auth.pipery.dev
 ingress:
   className: nginx
   annotations:
@@ -12,4 +16,3 @@ ingress:
     - secretName: pipery.dev-wildcart
       hosts:
         - "*.pipery.dev"
-
