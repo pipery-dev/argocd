@@ -1,20 +1,3 @@
 image:
-  repository: ghcr.io/pipery-dev/pipery-auth
-  tag: cecf496b14eb2c888d39711c045c574f86443a21
-
-dex:
-  ingress:
-    enabled: true
-    className: nginx
-    annotations:
-      cert-manager.io/cluster-issuer: letsencrypt-prod
-      nginx.ingress.kubernetes.io/ssl-redirect: "true"
-    hosts:
-      - host: auth.pipery.dev
-        paths:
-          - path: /
-            pathType: Prefix
-    tls:
-      - secretName: pipery-auth-tls
-        hosts:
-          - auth.pipery.dev
+  repository: ghcr.io/pipery-dev/auth
+  tag: f927c255a39fc4b0cad54b99842ae36782db0805
