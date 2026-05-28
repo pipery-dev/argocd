@@ -1,18 +1,13 @@
 image:
   repository: ghcr.io/pipery-dev/workflow-gen
-  tag: 188e622ea8e2b524bd0db205929e631d92c97d13
+  tag: 11c15172d6f1eb97b790eadd5bb3ae3f50858c38
 
 imagePullSecrets:
   - name: ghcr-pull-secret
+ingress:
+  className: nginx
 hostAliases:
   - ip: 172.25.0.2
     hostnames:
       - auth.pipery.dev
-ingress:
-  className: nginx
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-  tls: 
-    - secretName: pipery.dev-wildcart
-      hosts:
-        - "*.pipery.dev"
+
