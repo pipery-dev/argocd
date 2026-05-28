@@ -6,6 +6,12 @@ imagePullSecrets:
   - name: ghcr-pull-secret
 ingress:
   className: nginx
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  tls: 
+    - secretName: pipery.dev-wildcart
+      hosts:
+        - "*.pipery.dev"
 hostAliases:
   - ip: 172.25.0.2
     hostnames:
