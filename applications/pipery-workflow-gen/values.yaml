@@ -1,9 +1,9 @@
 image:
   repository: ghcr.io/pipery-dev/workflow-gen
-  tag: 08e406ed9732dd19108aee363133d970a4e5f2d1
+  tag: 188e622ea8e2b524bd0db205929e631d92c97d13
 
 imagePullSecrets:
   - name: ghcr-pull-secret
-
 ingress:
   className: nginx
+
