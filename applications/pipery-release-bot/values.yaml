@@ -4,8 +4,11 @@ image:
 
 imagePullSecrets:
   - name: ghcr-pull-secret
+
+ingress:
+  className: nginx
+
 hostAliases:
   - ip: 172.25.0.2
     hostnames:
       - auth.pipery.dev
-

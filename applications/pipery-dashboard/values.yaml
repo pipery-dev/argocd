@@ -5,3 +5,5 @@ image:
 imagePullSecrets:
   - name: ghcr-pull-secret
 
+ingress:
+  className: nginx
