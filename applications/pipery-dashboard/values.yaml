@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/pipery-dev/dashboard
-  tag: e01db783330fffdbc1b2346ce2f48cd03c0db305
+  tag: 2f451fd6d4b7c7fdbf7fcb0860297ecf681d52d2
 
 imagePullSecrets:
   - name: ghcr-pull-secret
