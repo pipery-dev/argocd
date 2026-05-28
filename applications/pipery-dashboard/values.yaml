@@ -1,9 +1,9 @@
 image:
   repository: ghcr.io/pipery-dev/dashboard
-  tag: c01eb7fc3f19f3bae0b917e2f40425e261f4f532
+  tag: e01db783330fffdbc1b2346ce2f48cd03c0db305
 
 imagePullSecrets:
   - name: ghcr-pull-secret
-
 ingress:
   className: nginx
+
