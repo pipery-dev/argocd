@@ -1,18 +1,13 @@
 image:
   repository: ghcr.io/pipery-dev/dashboard
-  tag: 2f451fd6d4b7c7fdbf7fcb0860297ecf681d52d2
+  tag: f8b1e948b2371ceca1b6b9d3af10d8f55bf918fe
 
 imagePullSecrets:
   - name: ghcr-pull-secret
+ingress:
+  className: nginx
 hostAliases:
   - ip: 172.25.0.2
     hostnames:
       - auth.pipery.dev
-ingress:
-  className: nginx
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-  tls: 
-    - secretName: pipery.dev-wildcart
-      hosts:
-        - "*.pipery.dev"
+
