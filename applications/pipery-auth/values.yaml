@@ -1,17 +1,19 @@
 image:
-  repository: ghcr.io/dexidp/dex
-  tag: sha256-2e8700f4db24cabd6a37aaf8f84f61d091da82807e124bddd74ca7f137fd7703
-ingress:
-  enabled: true
-  className: "nginx"
-  annotations:
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-  hosts:
-    - host: auth.pipery.dev
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls: 
-    - secretName: pipery.dev-wildcart
-      hosts:
-        - "*.pipery.dev"
+  repository: ghcr.io/pipery-dev/auth
+  tag: acbe929f907e1a9411b4dca6c66e75b954a46741
+
+dex:
+  ingress:
+    enabled: true
+    className: "nginx"
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - host: auth.pipery.dev
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+    tls: 
+      - secretName: pipery.dev-wildcart
+        hosts:
+          - "*.pipery.dev"
